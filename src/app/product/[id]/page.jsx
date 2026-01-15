@@ -2,6 +2,15 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import styles from './page.module.css';
 
+export async function generateStaticParams() {
+    const res = await fetch('https://fakestoreapi.com/products');
+    const products = await res.json();
+
+    return products.map((product) => ({
+        id: product.id.toString(), // The ID must be a string
+    }));
+}
+
 export async function generateMetadata({ params }) {
     const { id } = await params;
     try {
