@@ -1,10 +1,12 @@
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import styles from './page.module.css';
+import { getProducts } from '../../page';
 
 export async function generateStaticParams() {
-    const res = await fetch('https://fakestoreapi.com/products');
-    const products = await res.json();
+    const products = await getProducts()
+
+    console.log(products)
 
     return products.map((product) => ({
         id: product.id.toString(),
