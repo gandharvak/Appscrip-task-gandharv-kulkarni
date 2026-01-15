@@ -1,0 +1,87 @@
+.card {
+    position: relative;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding-bottom: 15px;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.imageWrapper {
+    background-color: #f5f5f5;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+}
+
+.productImage {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .imageWrapper .productImage {
+    transform: scale(1.05);
+}
+
+.cardInfo {
+    padding: 10px 15px;
+}
+
+.cardInfo h3 {
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 10px 0 5px;
+    white-space: nowrap;
+    color: #000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 600;
+}
+
+.cardInfo p {
+    font-size: 11px;
+    color: black;
+}
+
+.cardFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.cardFooter p span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.wishlist {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #888;
+    transition: color 0.3s ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px 0;
+    color: black;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

@@ -1,0 +1,64 @@
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.itemCount {
+    font-weight: bold;
+    font-size: 16px;
+    color: #000;
+    flex: 1;
+}
+
+.filterToggle {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.toggleBtn {
+    background: none;
+    border: none;
+    text-decoration: underline;
+    color: #000;
+    font-size: 14px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.sortSection {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dropdown {
+    border: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    text-align: right;
+}
+
+.leftSection {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .itemCount {
+        display: none;
+    }
+}

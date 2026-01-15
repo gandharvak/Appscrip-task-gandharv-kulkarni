@@ -1,0 +1,128 @@
+.navbar {
+    width: 100%;
+    padding: 20px 40px;
+    border-bottom: 1px solid #e5e5e5;
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+.topSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.logoIcon {
+    width: 35px;
+    height: 35px;
+}
+
+.brandName {
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.iconActions {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.langSelector {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.navLinks li {
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+
+.leftContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.mobileMenuBtn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .mobileMenuBtn {
+        display: block;
+    }
+
+    .desktopOnly {
+        display: none;
+    }
+
+    .brandName {
+        font-size: 20px;
+        position: static;
+        transform: none;
+    }
+
+    .topSection {
+        margin-bottom: 10px;
+    }
+
+    .navLinks {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+        border-top: 1px solid #e5e5e5;
+        width: 100%;
+    }
+
+    .navLinks.navOpen {
+        display: flex;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: white;
+        z-index: 100;
+        padding: 30px;
+        height: 100vh;
+    }
+
+    .navLinks li {
+        font-size: 18px;
+        text-align: left;
+    }
+}

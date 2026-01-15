@@ -1,0 +1,233 @@
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 80px 0 20px 0;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.topSection {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.newsletter {
+    flex: 1;
+}
+
+.newsletter h3,
+.linkColumn h3,
+.followSection h3,
+.payments h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.inputGroup {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.inputGroup input {
+    padding: 12px;
+    width: 300px;
+    border: none;
+    font-size: 14px;
+}
+
+.subscribeButton {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    opacity: 0.6;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contactItem h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+/* Desktop: Stacked Contact Info */
+.contactDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.dot {
+    display: none;
+    /* Hidden on desktop */
+}
+
+.divider {
+    border: 0;
+    border-top: 1px solid #333;
+    margin: 40px 0;
+}
+
+.bottomSection {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.linkColumn ul {
+    list-style: none;
+    padding: 0;
+}
+
+.linkColumn li {
+    margin-bottom: 12px;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.paymentIcons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.paymentIcons img {
+    height: 25px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 60px;
+    color: #888;
+}
+
+.mobileChevron {
+    display: none;
+}
+
+/* ==========================================================================
+   MOBILE VIEW (max-width: 768px) 
+   ========================================================================== */
+@media (max-width: 768px) {
+    .footer {
+        padding: 40px 0 20px 0;
+    }
+
+    .topSection {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .inputGroup input {
+        flex: 2;
+        width: auto;
+    }
+
+    .inputGroup button {
+        flex: 1;
+        padding: 10px;
+    }
+
+    .contactInfo {
+        border-top: 1px solid #333;
+        padding-top: 10px;
+        gap: 0;
+    }
+
+    .contactItem {
+        padding: 20px 0;
+        border-bottom: 1px solid #333;
+    }
+
+    .contactDetails {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0;
+    }
+
+    .dot {
+        display: inline;
+        margin: 0 8px;
+    }
+
+    .desktopOnly {
+        display: none;
+    }
+
+    .bottomSection {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .linkColumn {
+        border-bottom: 1px solid #333;
+    }
+
+    .columnHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .columnHeader h3 {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .mobileChevron {
+        display: block;
+        transition: transform 0.3s ease;
+    }
+
+    .linkList {
+        display: none;
+        padding: 15px 0;
+    }
+
+    .isOpen .linkList {
+        display: flex;
+        gap: 15px;
+    }
+
+    .isOpen .mobileChevron {
+        transform: rotate(180deg);
+    }
+
+    .socials {
+        border-bottom: 1px solid #333;
+    }
+
+    .payments {
+        margin-top: 30px;
+    }
+
+    .divider {
+        display: none;
+    }
+}
