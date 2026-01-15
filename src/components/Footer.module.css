@@ -210,9 +210,18 @@
         padding: 15px 0;
     }
 
+    .socialIcons {
+        display: none;
+    }
+
     .isOpen .linkList {
+        display: block;
+    }
+
+    .isOpen .socialIcons {
         display: flex;
         gap: 15px;
+        margin-bottom: 40px;
     }
 
     .isOpen .mobileChevron {

@@ -88,7 +88,7 @@ const Footer = () => {
                                 <h3>FOLLOW US</h3>
                                 <ChevronDown className={styles.mobileChevron} />
                             </div>
-                            <div className={`${styles.socialIcons} ${styles.linkList}`}>
+                            <div className={`${styles.socialIcons}`}>
                                 <Instagram size={24} className={styles.icon} />
                                 <Linkedin size={24} className={styles.icon} />
                             </div>

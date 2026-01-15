@@ -6,8 +6,6 @@ import { getProducts } from '../../page';
 export async function generateStaticParams() {
     const products = await getProducts()
 
-    console.log(products)
-
     return products.map((product) => ({
         id: product.id.toString(),
     }));
